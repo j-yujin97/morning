@@ -1,19 +1,36 @@
+.d-flex{
+   display: flex;
+}
+
+
+
 #yj_quick{
+    position: fixed;
+    right: 0;
+    bottom: 0;    
+    gap: 10px;
+
     li{
+        
         a{
             svg{
+                fill:red;
+                transform: scale(2);
                  
-            }
-        }
-        &.youtubesns{
-            a{
-                svg{
-                }
             }
         }
         &.gitsns{
             a{
                 svg{
+                    fill:black;
+                    transform:scale(2)  translateY(-100%);
+                }
+            }
+        }
+        &.twitter{
+            a{
+                svg{
+                    fill: royalblue
                     
                 }
             }
