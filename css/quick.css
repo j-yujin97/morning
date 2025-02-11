@@ -4,17 +4,40 @@
 
 #yj_quick {
   position: fixed;
-  right: 0;
-  bottom: 0;
+  right: 5rem;
+  bottom: 5vh;
+}
+#yj_quick li {
+  margin-top: 30px;
+}
+#yj_quick li a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 10px;
 }
 #yj_quick li a svg {
   fill: red;
   transform: scale(2);
 }
+#yj_quick li a span {
+  display: block;
+  color: black;
+  font-size: 0.85em;
+}
+@media (max-width: 1024px) {
+  #yj_quick li a span {
+    display: none;
+  }
+}
 #yj_quick li.gitsns a svg {
   fill: black;
-  transform: scale(2) translateY(-100%);
+}
+@media (max-width: 575px) {
+  #yj_quick li.twitter {
+    display: none;
+  }
 }
 #yj_quick li.twitter a svg {
   fill: royalblue;
